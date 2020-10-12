@@ -3,7 +3,7 @@
 }
 
 .conteneur {
-    max-width: 1100px;
+    max-width: 970px;
     margin: 0 auto;
 }
 
@@ -16,5 +16,15 @@ img {
     .divImg {
         display: inline-block;
         width: 50%;
+    }
+}
+
+@media screen and (min-width: 1370px) {
+    .conteneur {
+        max-width: 1370px;
+    }
+
+    .divImg {
+        width: 25%;
     }
 }

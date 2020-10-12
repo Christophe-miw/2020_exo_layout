@@ -1,0 +1,66 @@
+img{
+    width: 100%;
+}
+
+.image{
+    display: inline-block;
+    margin: 0 auto;
+    width: 98%;
+    margin-bottom: 5px;
+
+}
+h2::after{
+    content: "vue telephone 320px";
+}
+.container{
+    max-width: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.titre{
+    text-align: center;
+}
+
+/* pour les tablettes */
+@media screen and (min-width: 769px)
+{
+    .image{
+        width: 49%;
+    }
+    h2::after{
+        content: "vue tablette 769px";
+    }
+    .container{
+        max-width: none;
+    }
+}
+
+
+/* pour les desktop */
+@media screen and (min-width: 900px)
+{
+    .image{
+        width: 49%;
+    }
+    h2::after{
+        content: "vue desktop";
+    }
+    .container{
+        max-width: 900px;
+    }
+}
+
+/* pour les grands desktop */
+@media screen and (min-width: 1370px)
+{
+    .image{
+        width: 24%;
+        
+    }
+    h2::after{
+        content: "vue grand desktop > 1370px";
+    }
+    .container{
+        max-width: none;
+    }
+}

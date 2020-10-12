@@ -1,18 +1,16 @@
-img{
-    width: 100%;
-}
-
-.img_4{
+/*Vue Mobile First*/
+h1{
     text-align: center;
 }
 
-.img_list{
-    width: 45%;
-    margin: 5px 5px 5px 5px;
-    display: inline-block;
+img {
+    width: 100%;
+    margin-bottom: 5px;
 }
 
-h1{
+.img_4{
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -20,8 +18,7 @@ h1{
     display: none;
 }
 .desktop{
-    text-align: center;
-    display: block;
+    display: none;
 }
 
 .tablette{
@@ -29,11 +26,62 @@ h1{
 }
 
 .telephone{
-    display: none;
+    text-align: center;
 }
 
 
+/*vue tablette*/
+@media screen and (min-width: 768px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
 
+    .img_list{
+        width: 45%;
+        margin: 5px 5px 5px 5px;
+        display: inline-block;
+    }
+
+    .desktopG{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        text-align: center;
+        display: block;
+    }
+
+    .telephone{
+        display: none;
+    }
+
+}
+
+/* Vue Desktop*/
+@media screen and (min-width: 970px) {
+
+    .desktopG {
+        display: none;
+    }
+
+    .desktop {
+        text-align: center;
+        display: block;
+    }
+
+    .tablette {
+        display: none;
+    }
+
+    .telephone {
+        display: none;
+    }
+}
 
 
 /*vue grand ecran*/
@@ -43,16 +91,10 @@ h1{
         clear:both;
     }
 
-
-    .img_4{
-        text-align: center;
-    }
-
     .img_list{
         width: 20%;
     }
 
-
     .desktopG{
         text-align: center;
         display: block;
@@ -71,74 +113,5 @@ h1{
 
 }
 
-/*vue tablette*/
-@media screen and (max-width: 970px) {
-    .bloc {
-        display:block;
-        clear:both;
-    }
 
 
-    .img_4{
-        text-align: center;
-    }
-
-    .img_list{
-        width: 45%;
-        margin: 5px 5px 5px 5px;
-    }
-
-
-    .desktopG{
-        display: none;
-    }
-    .desktop{
-        display: none;
-    }
-
-    .tablette{
-        text-align: center;
-        display: block;
-    }
-
-    .telephone{
-        display: none;
-    }
-
-}
-
-/*vue telephone*/
-@media screen and (max-width: 320px) {
-    .bloc {
-        display:block;
-        clear:both;
-    }
-
-
-    .img_4{
-        text-align: center;
-
-    }
-
-    .img_list{
-        width: 95%;
-        margin: 2px 5px 2px 5px;
-    }
-
-    .desktopG{
-        display: none;
-    }
-    .desktop{
-        display: none;
-    }
-
-    .tablette{
-        display: none;
-    }
-
-    .telephone{
-        text-align: center;
-        display: block;
-    }
-
-}

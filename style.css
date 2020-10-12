@@ -1,0 +1,42 @@
+
+/* Version téléphone à 320px : */
+img{
+    width:100%;
+    height:auto;
+}
+
+#fond-blanc{
+    background-color:white;
+}
+
+.block{
+    backgrou-color:white;
+
+}
+#fond-noir {
+    background-color:black;
+}
+h1 {
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+}
+/* cacher les titres non adapté : */
+
+.desktopG{
+    display: none;
+}
+
+.desktop{
+    display:none;
+}
+
+.tablette {
+    display:none;
+}
+
+
+
+

@@ -13,11 +13,6 @@
 .txtcenter{
     text-align: center;
 }
-.image:hover{
-    transform: scale(0.95);
-    opacity: 0.8;
-}
-
 
 /* vue tablette */
 @media screen and (min-width:768px) {
@@ -30,12 +25,6 @@
     .image{
         display: inline-block;
         width: 47%;        
-    }
-    #img1, #img3{
-        margin-right: 7px;
-    }
-    #img2, #img4{
-        margin-left: 0px;
     }
 }
 

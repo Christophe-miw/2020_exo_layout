@@ -1,14 +1,7 @@
-.bloc {
-  margin: 0 auto;
-  display: inline-block;
-  width: 100%;
-}
 img {
   margin: 5px;
 }
-.imgContainer {
-  width: 23%;
-}
+
 .desktopG,
 .desktop,
 .tablette,
@@ -62,5 +55,13 @@ img {
 @media screen and (min-width: 1370px) {
   .desktopG {
     display: block;
+  }
+  .imgContainer {
+    width: 23%;
+  }
+  .bloc {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
   }
 }

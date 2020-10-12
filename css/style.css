@@ -1,3 +1,15 @@
 .txtcenter {
     text-align: center;
 }
+
+img {
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .divImg {
+        display: inline-block;
+        width: 50%;
+    }
+}

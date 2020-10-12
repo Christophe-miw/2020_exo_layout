@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.tablette, .desktop, .desktopG {
+    display: none;
+}
+
 .conteneur {
     max-width: 970px;
     margin: 0 auto;
@@ -12,23 +16,19 @@ img {
     padding: 10px;
 }
 
-.tablette, .desktop, .desktopG {
-    display: none;
-}
-
 @media screen and (min-width: 768px) {
 
     .telephone {
         display: none;
     }
 
+    .tablette {
+        display: block;
+    }
+
     .divImg {
         display: inline-block;
         width: 50%;
-    }
-
-    .tablette {
-        display: block;
     }
 }
 

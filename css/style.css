@@ -18,10 +18,33 @@ div.items_container img:not(:last-of-type) {
     margin-right: 20px;
 }
 
+.desktop,
+.tablette,
+.telephone {
+    display: none;
+}
 
-
-@media all and (min-width : 1370px) {
-    .desktop, .tablette, .telephone {
+@media all and (max-width : 1370px) {
+    .desktop {
+        display: block;
+    }
+    .desktopG {
+        display: none;
+    }
+}
+@media all and (max-width : 970px) {
+    .tablette {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+@media all and (max-width : 768px) {
+    .telephone {
+        display: block;
+    }
+    .tablette {
         display: none;
     }
 }

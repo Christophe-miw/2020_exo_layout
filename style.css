@@ -6,6 +6,7 @@ img{
 }
 
 #fond-blanc{
+
     background-color:white;
 }
 
@@ -35,6 +36,71 @@ h2 {
 
 .tablette {
     display:none;
+}
+
+
+/* Version tablette :  */
+
+@media screen and (min-width: 768px){
+
+    .telephone{
+        display:none;
+    }
+
+
+    .tablette {
+        display:initial;
+
+    }
+
+    h2{
+        text-align: center;
+
+    }
+
+    #img1{
+        width:383px;
+        display:inline-block;
+    }
+
+    #img2 {
+        width:383px;
+        display:inline-block;
+    }
+
+    #img3{
+        width:383px;
+        display:inline-block;
+    }
+
+    #img4{
+        width:383px;
+        display:inline-block;
+    }
+
+
+}
+
+/* Version Desktop > 970px */
+
+@media screen and (min-width: 970px){
+
+
+    .desktop{
+        display:initial;
+
+    }
+
+    h2{
+        text-align:center;
+    }
+
+    .tablette {
+        display:none;
+
+    }
+
+
 }
 
 

@@ -10,7 +10,7 @@
 		}
 
 		/* Téléphone */
-		@media screen and (min-width:320px){
+		@media screen and (min-width:0px){
 			.container{
 				margin: 0 auto;
 				text-align: center;
@@ -39,6 +39,7 @@
 		@media screen and (min-width:728px){
 			/* Container */
 			.container{
+				max-width: 100vw;
 				margin: 0 auto;
 				text-align: center;
 			}
@@ -57,7 +58,7 @@
 			/* Blocs*/
 			.img{
 				display: inline-block;
-				width: 40%;
+				width: 48%;
 				padding: 5px;
 			}
 			img{
@@ -67,12 +68,6 @@
 		}
 		/* Desktop */
 		@media screen and (min-width:970px){
-			/* Container */
-			.container{
-				width: 90vw;
-				margin: 0 auto;
-				text-align: center;
-			}
 			/* Titre */
 			body{
 				background-color:yellow;
@@ -83,17 +78,11 @@
 			.desktop{
 				display: block;
 			}
-
-			/* Blocs*/
-			.img{
-				display: inline-block;
-				width: 40%;
-				padding: 5px;
+			.container{
+				max-width: 100vw;
+				margin: 0 auto;
+				text-align: center;
 			}
-			img{
-				width: 100%;
-			}
-
 		}
 		/* Grand desktop */
 		@media screen and (min-width:1370px){

@@ -1,0 +1,107 @@
+/*gestion img/bloc*/
+img{
+	width: 100%;
+	height: auto;
+}
+
+.blocDouble > div {
+	width: 100%;
+}
+    
+/* gestion des titres */
+h1, h2{
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+.desktopG, .desktop, .tablette{
+	/*mode telephone donc on enlève les autres titres */
+	display: none;
+}
+
+h1{
+	font-size: 18px;
+}
+
+h2{
+	font-size: 12px;
+}
+
+
+/* format tablette */
+@media screen and (min-width: 760px){
+	/*On enlève les titres inadéquats */
+	.telephone{
+		display: none;
+	}
+	.tablette{
+		display: block;
+	}
+
+/* gestion taille des titres */
+	h1{
+		font-size: 20px;
+	}
+
+	h2{
+		font-size: 18px;
+	}
+
+/* Centrage des blocs images */
+	.blocDouble > div {
+		width: 40%;
+		padding-right: 1%;
+		display: inline-block;
+	}
+
+	.blocDouble {
+		padding-left: 15%;
+	}
+	
+}
+
+
+/* format desktop */
+@media screen and (min-width: 971px){
+	/*On enlève les titres inadéquats */
+	.tablette{
+		display: none;
+	}
+
+	.desktop{
+		display: block;
+	}
+/* gestion taille des titres */
+	h1{
+		font-size: 25px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.blocDouble > div{
+		padding-right: 1%;
+	}
+}
+
+/* format GDesktop */
+@media screen and (min-width: 1370px){
+	/*On enlève les titres inadéquats */
+	.desktop{
+		display: none;
+	}
+
+	.desktopG{
+		display: block;
+	}
+
+	/*Mise en ligne des images et blocs*/
+	.blocDouble > div {
+		width: 15%;
+		margin-left: 5%;
+	}
+}
+
+

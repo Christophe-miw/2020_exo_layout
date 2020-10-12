@@ -1,0 +1,65 @@
+
+/* aplication du reset css (avec img{width: 100%}) */
+
+/* vue de base en mode telephone */
+.image{
+    margin: 5px 10px;
+}
+
+.tablette, .desktop, .desktopG{
+    display: none;
+}
+
+.txtcenter{
+    text-align: center;
+}
+
+/* vue tablette */
+@media screen and (min-width:768px) {
+    .telephone{
+        display: none;
+    }
+    .tablette{
+        display: block;
+    }
+    .image{
+        display: inline-block;
+        width: 47%;        
+    }
+}
+
+/* vue desktop */
+@media screen and (min-width:970px) {
+    .tablette{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .content{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+/* vue wide desktop */
+@media screen and (min-width:1370px) {
+    .desktop{
+        display: none;
+    }
+    .desktopG{
+        display: block;
+    }
+    .content{
+        margin: 0;
+        width: 47%;
+        display: inline-block;
+    }
+    .image{
+        margin: 0px;
+        width: 49%;
+    }
+    #mainContent{
+        margin-left: 6%;
+    }
+}

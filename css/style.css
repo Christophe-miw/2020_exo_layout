@@ -1,3 +1,7 @@
+
+/* aplication du reset css (avec img{width: 100%}) */
+
+/* vue de base en mode telephone */
 .image{
     margin: 5px 10px;
 }
@@ -9,9 +13,13 @@
 .txtcenter{
     text-align: center;
 }
+.image:hover{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
 
 
-
+/* vue tablette */
 @media screen and (min-width:768px) {
     .telephone{
         display: none;
@@ -31,7 +39,8 @@
     }
 }
 
-@media screen and (min-width:971px) {
+/* vue desktop */
+@media screen and (min-width:970px) {
     .tablette{
         display: none;
     }
@@ -44,6 +53,7 @@
     }
 }
 
+/* vue wide desktop */
 @media screen and (min-width:1370px) {
     .desktop{
         display: none;

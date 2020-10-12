@@ -1,0 +1,58 @@
+img{
+    width: 100%;
+}
+.image
+{
+    display: inline-block;
+    margin: 0 auto;
+    width: 49%;
+    max-width: 500px;
+    margin-bottom: 5px;
+
+}
+.container{
+   /* margin: 0 auto; <- ne marche pas, je ne sais pas pourquoi, mais text-align fonctionne */
+    text-align: center;
+}
+h2::after{
+    content: "vue desktop";
+}
+
+.titre{
+    text-align: center;
+}
+
+
+/* pour les grands desktop */
+@media screen and (min-width: 1370px)
+{
+    .image{
+        width: 24%;
+        
+    }
+    h2::after{
+        content: "vue grand desktop";
+    }
+}
+
+/* pour les tablettes */
+@media screen and (max-width: 769px)
+{
+    .image{
+        width: 49%;
+    }
+    h2::after{
+        content: "vue tablette";
+    }
+}
+
+/* pour les telephones */
+@media screen and (max-width: 320px)
+{
+    .image{
+        width: 98%;
+    }
+    h2::after{
+        content: "vue telephone";
+    }
+}

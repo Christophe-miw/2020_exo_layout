@@ -7,12 +7,14 @@
 }
 
 .conteneur {
-    max-width: 970px;
     margin: 0 auto;
 }
 
 img {
     width: 100%;
+}
+
+.divGrille img {
     padding: 10px;
 }
 
@@ -26,7 +28,7 @@ img {
         display: block;
     }
 
-    .divImg {
+    .divGrille {
         display: inline-block;
         width: 50%;
     }
@@ -42,6 +44,10 @@ img {
         display: block;
     }
 
+    .conteneur {
+        width: 970px;
+    }
+
 }
 
 @media screen and (min-width: 1370px) {
@@ -55,10 +61,10 @@ img {
     }
 
     .conteneur {
-        max-width: 1370px;
+        width: 1370px;
     }
 
-    .divImg {
+    .divGrille {
         width: 25%;
     }
 }

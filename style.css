@@ -5,11 +5,6 @@ img{
     height:auto;
 }
 
-#fond-blanc{
-
-    background-color:white;
-}
-
 h1 {
     text-align:center;
 }
@@ -32,6 +27,7 @@ h2 {
     display:none;
 }
 
+/* espacement entre les images : */
 .images {
     padding:10px;
 }
@@ -41,17 +37,18 @@ h2 {
 
 @media screen and (min-width: 768px){
 
+    /* on cache le titre non adapté : */
     .telephone{
         display:none;
     }
 
+    /* on affiche et on centre le titre adapté : */
     .tablette {
+        text-align: center;
         display:block;
     }
 
-    h2{
-        text-align: center;
-    }
+    /* alignement des images : */
 
     .images {
         padding:10px;
@@ -65,15 +62,13 @@ h2 {
 
 @media screen and (min-width: 970px){
 
+    /* on affiche et on centre le titre adapté : */
     .desktop{
         text-align: center;
         display:block;
     }
 
-    h2{
-        text-align:center;
-    }
-
+    /* on cache le titre non adapté : */
     .tablette {
         display:none;
     }
@@ -85,14 +80,18 @@ h2 {
 
 @media screen and (min-width:1370px){
 
+    /* on cache le titre non adapté : */
     .desktop{
         display:none;
     }
 
+    /* On centre le titre */
     .desktopG{
         text-align: center;
         display:block;
     }
+
+    /* alignement des images : */
 
     .imgDesk{
         width:49%;

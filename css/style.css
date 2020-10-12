@@ -35,7 +35,11 @@ img {
     display: none;
   }
 
-  .block > div > div {
+  .block div:nth-child(odd) {
+    margin: 1%;
+  }
+
+  .block > div {
     display: inline-block;
     width: 49%;
   }
@@ -74,7 +78,7 @@ img {
   }
   .block > div {
     display: inline-block;
-    width: 49%;
+    width: 24%;
   }
   .desktopG {
     display: block;

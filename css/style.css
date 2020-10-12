@@ -1,9 +1,16 @@
+/* telephone + default */
+
 body {
   margin: 0;
   padding: 0;
 }
 .txtcenter {
   text-align: center;
+}
+
+.block {
+  padding: 10px;
+  margin: 0 auto;
 }
 
 img {
@@ -22,25 +29,31 @@ img {
   display: none;
 }
 
-@media (min-width: 768px) {
+/* tablette */
+@media (min-width: 769px) {
   .telephone {
     display: none;
   }
 
-  .d-inline-block {
+  .block > div > div {
     display: inline-block;
     width: 49%;
   }
 
+  .block {
+    padding: 0;
+    max-width: 750px;
+  }
+
   .tablette {
     display: block;
   }
 }
 
-@media (min-width: 970px) {
-  .r {
-    margin: 0 auto;
-    max-width: 900px;
+/* desktop */
+@media (min-width: 971px) {
+  .block {
+    max-width: 950px;
   }
   .tablette {
     display: none;
@@ -50,16 +63,16 @@ img {
   }
 }
 
-@media (min-width: 1370px) {
-  .r {
-    margin: 0 auto;
-    max-width: 1300px;
+/* desktopG */
+@media (min-width: 1371px) {
+  .block {
+    max-width: 1350px;
   }
 
   .desktop {
     display: none;
   }
-  .block-inline-block {
+  .block > div {
     display: inline-block;
     width: 49%;
   }

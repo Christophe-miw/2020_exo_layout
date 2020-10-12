@@ -2,6 +2,9 @@ div.wrap {
     width: 1440px;
     margin: 0 auto;
 }
+.txtcenter {
+    text-align: center;
+}
 
 div.items_container {
     display: inline-block;
@@ -15,3 +18,10 @@ div.items_container img:not(:last-of-type) {
     margin-right: 20px;
 }
 
+
+
+@media all and (min-width : 1370px) {
+    .desktop, .tablette, .telephone {
+        display: none;
+    }
+}

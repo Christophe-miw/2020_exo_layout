@@ -21,20 +21,21 @@ div.items_container img:not(:last-of-type) {
     margin-right: 20px;
 }
 
-.desktop,
-.tablette,
-.telephone {
+h2.desktop,
+h2.tablette,
+h2.telephone {
     display: none;
 }
 
 @media all and (max-width : 1370px) {
+
     div.wrap {
         width: 80%;
     }
-    .desktop {
+    h2.desktop {
         display: block;
     }
-    .desktopG {
+    h2.desktopG {
         display: none;
     }
     div.items_container img {
@@ -52,24 +53,26 @@ div.items_container img:not(:last-of-type) {
     div.wrap {
         width: 95%;
     }
-    .tablette {
+    h2.tablette {
         display: block;
     }
-    .desktop {
+    h2.desktop {
         display: none;
     }
 }
 @media all and (max-width : 768px) {
+
     div.items_container img {
         width: 100%;
         margin-right: 0;
     }
 }
 @media all and (max-width : 320px) {
-    .telephone {
+
+    h2.telephone {
         display: block;
     }
-    .tablette {
+    h2.tablette {
         display: none;
     }
 }

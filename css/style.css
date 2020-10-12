@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.conteneur {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 img {
     width: 100%;
     padding: 10px;

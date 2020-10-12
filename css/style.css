@@ -1,5 +1,5 @@
 div.wrap {
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
 }
 .txtcenter {
@@ -8,11 +8,11 @@ div.wrap {
 
 div.items_container {
     display: inline-block;
-    font-size: 0;
+    font-size: 0; 
 }
-
 div.items_container img {
     width: calc((100% / 4) - (20px/(4/3)));
+    margin-bottom: 20px;
 }
 div.items_container img:not(:last-of-type) {
     margin-right: 20px;
@@ -25,14 +25,30 @@ div.items_container img:not(:last-of-type) {
 }
 
 @media all and (max-width : 1370px) {
+    div.wrap {
+        width: 80%;
+    }
     .desktop {
         display: block;
     }
     .desktopG {
         display: none;
     }
+    div.items_container img {
+        width: calc((100% / 2) - (20px / 2));
+    }
+    div.items_container img:not(:last-of-type) {
+        margin-right: 0;
+    }
+    div.items_container img:nth-of-type(2n+1) {
+        margin-right: 20px;
+    }
 }
 @media all and (max-width : 970px) {
+
+    div.wrap {
+        width: 95%;
+    }
     .tablette {
         display: block;
     }
@@ -41,6 +57,12 @@ div.items_container img:not(:last-of-type) {
     }
 }
 @media all and (max-width : 768px) {
+    div.items_container img {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+@media all and (max-width : 320px) {
     .telephone {
         display: block;
     }

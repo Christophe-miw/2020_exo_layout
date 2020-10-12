@@ -1,0 +1,117 @@
+/*Vue Mobile First*/
+h1{
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.img_4{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.desktopG{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+
+.tablette{
+    display: none;
+}
+
+.telephone{
+    text-align: center;
+}
+
+
+/*vue tablette*/
+@media screen and (min-width: 768px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+
+    .img_list{
+        width: 45%;
+        margin: 5px 5px 5px 5px;
+        display: inline-block;
+    }
+
+    .desktopG{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        text-align: center;
+        display: block;
+    }
+
+    .telephone{
+        display: none;
+    }
+
+}
+
+/* Vue Desktop*/
+@media screen and (min-width: 970px) {
+
+    .desktopG {
+        display: none;
+    }
+
+    .desktop {
+        text-align: center;
+        display: block;
+    }
+
+    .tablette {
+        display: none;
+    }
+
+    .telephone {
+        display: none;
+    }
+}
+
+
+/*vue grand ecran*/
+@media screen and (min-width: 1370px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+
+    .img_list{
+        width: 20%;
+    }
+
+    .desktopG{
+        text-align: center;
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        display: none;
+    }
+
+    .telephone{
+        display: none;
+    }
+
+}
+
+
+

@@ -2,19 +2,11 @@ img{
     width: 100%;
 }
 
-
-
-.img_2{
+.img_4{
     text-align: center;
 }
 
-.img_gauche{
-    width: 45%;
-    margin: 5px 5px 5px 5px;
-    display: inline-block;
-}
-
-.img_droite{
+.img_list{
     width: 45%;
     margin: 5px 5px 5px 5px;
     display: inline-block;
@@ -52,17 +44,14 @@ h1{
     }
 
 
-    .img_2{
+    .img_4{
         text-align: center;
     }
 
-    .img_gauche{
+    .img_list{
         width: 20%;
     }
 
-    .img_droite{
-        width: 20%;
-    }
 
     .desktopG{
         text-align: center;
@@ -90,19 +79,15 @@ h1{
     }
 
 
-    .img_2{
+    .img_4{
         text-align: center;
     }
 
-    .img_gauche{
+    .img_list{
         width: 45%;
         margin: 5px 5px 5px 5px;
     }
 
-    .img_droite{
-        width: 45%;
-        margin: 5px 5px 5px 5px;
-    }
 
     .desktopG{
         display: none;
@@ -130,17 +115,12 @@ h1{
     }
 
 
-    .img_2{
+    .img_4{
         text-align: center;
 
     }
 
-    .img_gauche{
-        width: 95%;
-        margin: 2px 5px 2px 5px;
-    }
-
-    .img_droite{
+    .img_list{
         width: 95%;
         margin: 2px 5px 2px 5px;
     }

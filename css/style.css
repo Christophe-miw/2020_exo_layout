@@ -1,0 +1,173 @@
+img{
+    width: 100%;
+}
+
+
+
+.img_2{
+    text-align: center;
+}
+
+.img_gauche{
+    width: 45%;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+.img_droite{
+    width: 45%;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+}
+
+.desktopG{
+    display: none;
+}
+.desktop{
+    text-align: center;
+    display: block;
+}
+
+.tablette{
+    display: none;
+}
+
+.telephone{
+    display: none;
+}
+
+
+
+
+
+/*vue grand ecran*/
+@media screen and (min-width: 1370px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+    h1{
+        text-align: center;
+        display: none;
+    }
+
+    .img_2{
+        text-align: center;
+    }
+
+    .img_gauche{
+        width: 20%;
+    }
+
+    .img_droite{
+        width: 20%;
+    }
+
+    .desktopG{
+        text-align: center;
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        display: none;
+    }
+
+    .telephone{
+        display: none;
+    }
+
+}
+
+/*vue tablette*/
+@media screen and (max-width: 970px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+    h1{
+        text-align: center;
+        display: none;
+    }
+
+    .img_2{
+        text-align: center;
+    }
+
+    .img_gauche{
+        width: 45%;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .img_droite{
+        width: 45%;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .desktopG{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        text-align: center;
+        display: block;
+    }
+
+    .telephone{
+        display: none;
+    }
+
+}
+
+/*vue telephone*/
+@media screen and (max-width: 320px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+    h1{
+        text-align: center;
+        display: none;
+    }
+
+    .img_2{
+        text-align: center;
+
+    }
+
+    .img_gauche{
+        width: 95%;
+        margin: 2px 5px 2px 5px;
+    }
+
+    .img_droite{
+        width: 95%;
+        margin: 2px 5px 2px 5px;
+    }
+
+    .desktopG{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .tablette{
+        display: none;
+    }
+
+    .telephone{
+        text-align: center;
+        display: block;
+    }
+
+}

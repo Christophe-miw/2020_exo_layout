@@ -1,0 +1,106 @@
+
+/* Version téléphone à 320px : */
+img{
+    width:100%;
+    height:auto;
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* cacher les titres non adapté : */
+
+.desktopG{
+    display: none;
+}
+
+.desktop{
+    display:none;
+}
+
+.tablette {
+    display:none;
+}
+
+/* espacement entre les images : */
+.images {
+    padding:10px;
+}
+
+
+/* Version tablette :  */
+
+@media screen and (min-width: 768px){
+
+    /* on cache le titre non adapté : */
+    .telephone{
+        display:none;
+    }
+
+    /* on affiche et on centre le titre adapté : */
+    .tablette {
+        text-align: center;
+        display:block;
+    }
+
+    /* alignement des images : */
+
+    .images {
+        padding:10px;
+        width:49%;
+        display:inline-block;
+    }
+
+}
+
+/* Version Desktop > 970px */
+
+@media screen and (min-width: 970px){
+
+    /* on affiche et on centre le titre adapté : */
+    .desktop{
+        text-align: center;
+        display:block;
+    }
+
+    /* on cache le titre non adapté : */
+    .tablette {
+        display:none;
+    }
+
+}
+
+
+/* Vue grand Desktop : */
+
+@media screen and (min-width:1370px){
+
+    /* on cache le titre non adapté : */
+    .desktop{
+        display:none;
+    }
+
+    /* On centre le titre */
+    .desktopG{
+        text-align: center;
+        display:block;
+    }
+
+    /* alignement des images : */
+
+    .imgDesk{
+        width:49%;
+        display:inline-block;
+
+    }
+
+}
+
+
+
+

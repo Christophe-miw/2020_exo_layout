@@ -1,0 +1,70 @@
+.txtcenter {
+    text-align: center;
+}
+
+.tablette, .desktop, .desktopG {
+    display: none;
+}
+
+.conteneur {
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.divGrille img {
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .telephone {
+        display: none;
+    }
+
+    .tablette {
+        display: block;
+    }
+
+    .divGrille {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 970px) {
+
+    .tablette {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .conteneur {
+        width: 970px;
+    }
+
+}
+
+@media screen and (min-width: 1370px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .desktopG {
+        display: block;
+    }
+
+    .conteneur {
+        width: 1370px;
+    }
+
+    .divGrille {
+        width: 25%;
+    }
+}

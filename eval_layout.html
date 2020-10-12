@@ -9,11 +9,6 @@
 			width: 100%;
 		}
 
-		.telephone{
-			width: 100%;
-		}
-
-
 		/*CSS pour telephone entre 320px et 768px*/
 		@media screen and (min-width: 320px){
 			.desktopG{
@@ -55,8 +50,13 @@
 			.telephone{
 				visibility: hidden;
 			}
+
+			.row{
+				padding-left: 2%;
+			}
+
 			.block{
-				width: 42%;
+				width: 43%;
 				display: inline-block;
 			}
 		}
@@ -78,12 +78,14 @@
 			.telephone{
 				visibility: hidden;
 			}
+
 			.block{
-				width: 45%;
+				width: 43%;
 				display: inline-block;
 			}
 		}
 
+		/*CSS pour desktopg entre 1370px et infini*/
 		@media screen and (min-width: 1370px){
 			.desktopG{
 				visibility: visible;
@@ -101,8 +103,13 @@
 				visibility: hidden;
 			}
 
+			.row{
+				padding-left: 5%;
+			}
+
 			.block{
-				width: 45%;
+				width: 20%;
+				display: inline-block;
 			}
 		}
 	</style>
@@ -110,7 +117,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Eval Layout</title>
-		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="reset.css">
 	</head>
 	<body>
 		<h1 class="txtcenter">Evaluation  Layout</h1>

@@ -22,7 +22,7 @@ h2::after{
 }
 
 /* pour les tablettes */
-@media screen and (min-width: 320px)
+@media screen and (min-width: 769px)
 {
     .image{
         width: 49%;
@@ -37,7 +37,7 @@ h2::after{
 
 
 /* pour les desktop */
-@media screen and (min-width: 769px)
+@media screen and (min-width: 900px)
 {
     .image{
         width: 49%;
@@ -46,7 +46,7 @@ h2::after{
         content: "vue desktop";
     }
     .container{
-        max-width: 769px;
+        max-width: 900px;
     }
 }
 

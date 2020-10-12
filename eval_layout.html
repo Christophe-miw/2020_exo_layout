@@ -1,22 +1,107 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<style>
+		.txtcenter{
+			text-align: center;
+		}
 
+		/* Téléphone */
+			.container{
+				max-width: 100vw;
+				text-align: center;
+				margin:0 auto;
+			}
+			.tablette, .desktop, .desktopG{
+				display: none;
+			}
+			.telephone{
+				display: block;
+			}
+			/* Blocs*/
+			.img{
+				display: inline-block;
+				width: 95%;
+				padding: 5px;
+			}
+			img{
+				width: 100%;
+			}
+		
+
+		/* Tablette */
+		@media screen and (min-width:728px){
+			/* Titre */
+			.telephone, .desktopG, .desktop {
+				display: none;
+			}
+			.tablette{
+				display: block;
+			}
+
+			/* Blocs*/
+			.img{
+				width: 48%;
+			}
+
+		}
+		/* Desktop */
+		@media screen and (min-width:970px){
+			/* Titre */
+			.telephone, .tablette, .desktop {
+				display: none;
+			}
+			.desktop{
+				display: block;
+			}
+		}
+		/* Grand desktop */
+		@media screen and (min-width:1370px){
+			/* Container */
+			.container{
+				width: 85vw;
+			}
+			/* Titre */
+			.telephone, .tablette, .desktopG {
+				display: none;
+			}
+			.desktopG{
+				display: block;
+			}
+			/* Blocs*/
+			.img{
+				width: 23.5%;
+			}
+		}
 	</style>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Eval Layout</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<h1 class="txtcenter">Evaluation  Layout</h1>
-		<h2 class="desktopG txtcenter">Vue Desktop > 1370px</h2>
-		<h2 class="desktop txtcenter">Vue Desktop</h2>
-		<h2 class="tablette txtcenter">Vue Tablette à 768px à 970px</h2>
-		<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>
+</head>
+<body>
+	<h1 class="txtcenter">Evaluation  Layout</h1>
+	<h2 class="desktopG txtcenter">Vue GrandDesktop > 1370px</h2>
+	<h2 class="desktop txtcenter">Vue Desktop</h2>
+	<h2 class="tablette txtcenter">Vue Tablette à 768px à 970px</h2>
+	<h2 class="telephone txtcenter">Vue Téléphone à 320px</h2>
 
+	<div class="container">
+		<div class="ligne">
+			<div class="img">
+				<img src="img/mer.jpg">
+			</div>
+			<div class="img">
+				<img src="img/lac.jpg">
+			</div>
+			<div class="img">
+				<img src="img/montagne.jpg">
+			</div>
+			<div class="img">
+				<img src="img/foret.jpg">
+			</div>
+		</div>
+	</div>
 
-
-	</body>
+</body>
+</body>
 </html>

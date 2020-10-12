@@ -1,0 +1,121 @@
+h1, h2{
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.bloc1 > div {
+	width: 40%;
+	display: inline-block;
+}
+
+/* ecart entre les images*/
+#img1{
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.bloc2 > div {
+	width: 40%;
+	display: inline-block;
+}
+ 
+/* Centrage des blocs images */
+.bloc1, .bloc2 {
+	padding-left: 15%;
+}
+
+
+/* telephone */
+@media screen and ( max-width: 767px){
+
+	/*On enlève les titres inadéquats */
+	.desktopG, .desktop, .tablette{
+		display: none;
+	}
+	.bloc1 > div, .bloc2 > div {
+		width: 100%;
+	}
+/* gestion taille des titres */
+	h1{
+		font-size: 18px;
+	}
+
+	h2{
+		font-size: 12px;
+	}
+
+	.bloc1, .bloc2 {
+		padding-left: 0;
+	}
+}
+
+
+
+/* tablette */
+@media screen and (max-width: 970px) and (min-width: 768px){
+	/*On enlève les titres inadéquats */
+	.desktopG, .desktop, .telephone{
+		display: none;
+	}
+/* gestion taille des titres */
+	h1{
+		font-size: 20px;
+	}
+
+	h2{
+		font-size: 18px;
+	}
+
+}
+
+
+/* desktop */
+@media screen and ( max-width: 1370px) and (min-width: 971px){
+	/*On enlève les titres inadéquats */
+	.desktopG, .tablette, .telephone{
+		display: none;
+	}
+/* gestion taille des titres */
+	h1{
+		font-size: 25px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+}
+
+/* GDesktop */
+@media screen and (min-width: 1370px){
+	/*On enlève les titres inadéquats */
+	.desktop, .tablette, .telephone{
+		display: none;
+	}
+
+	/*Mise en ligne des images et blocs*/
+	.bloc1 > div,.bloc2> div {
+		width: 20%;	
+	}
+	.bloc2 > div, bloc2 > #img2{
+		float: right;
+	}
+
+	.bloc2 > div{
+		margin-top: -12.5%;
+	}
+
+	.bloc2 > #img1{
+		margin-right: 37%;
+	}
+	.bloc2 > #img2{
+		margin-right: 17%;
+	}
+}
+
+

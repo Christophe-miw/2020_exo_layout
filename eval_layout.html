@@ -10,11 +10,20 @@
 			body{
 				background-color:red;
 			}
+			.tablette, .desktop, .desktopG{
+				display: none;
+			}
 		}
 		/* Tablette */
 		@media screen and (min-width:728px){
 			body{
 				background-color:green;
+			}
+			.telephone, .desktopG, .desktop {
+				display: none;
+			}
+			.tablette{
+				display: inline;
 			}
 		}
 		/* Desktop */
@@ -22,11 +31,17 @@
 			body{
 				background-color:yellow;
 			}
+			.telephone, .tablette, .desktop {
+				display: none;
+			}
+			.desktopG{
+				display: inline;
+			}
 		}
 		/* Grand desktop */
 		@media screen and (min-width:1370px){
 			body{
-				background-color:black;
+				background-color:grey;
 			}
 		}
 	</style>
